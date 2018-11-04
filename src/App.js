@@ -45,7 +45,7 @@ class App extends Component {
 
   componentDidUpdate(prevState) {
     if(this.state.click && (this.state.city !== '' || this.state.zip !== '' ) ){
-    fetch("http://api.openweathermap.org/data/2.5/weather?zip="+this.state.zip+"&q="+this.state.city+"&units=imperial&APPID="+this.state.APIKEY+"").then(res => res.json())
+    fetch("https://api.openweathermap.org/data/2.5/weather?zip="+this.state.zip+"&q="+this.state.city+"&units=imperial&APPID="+this.state.APIKEY+"").then(res => res.json())
       .then(
         (result) => {
           this.setState({
