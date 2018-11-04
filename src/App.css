@@ -1,0 +1,136 @@
+html, body, #root, #root > div {
+  height: 100%; }
+
+.background-container {
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(left, lightblue, blue);
+  background-image: -o-linear-gradient(left, lightblue, blue);
+  background-image: linear-gradient(to right, lightblue, blue); }
+
+.weather-app-container {
+  display: flex;
+  height: 100%;
+  margin: auto;
+  width: 100%; }
+
+.weather-rain-picture {
+  display: block;
+  z-index: 1;
+  width: 100%;
+  background-image: url("images/Rain.jpg");
+  background-size: cover; }
+
+.weather-cloudy-picture {
+  display: block;
+  z-index: 1;
+  width: 100%;
+  background-image: url("images/cloudy.jpeg");
+  background-size: cover; }
+
+.weather-fog-picture {
+  display: block;
+  z-index: 1;
+  width: 100%;
+  background-image: url("images/fog.jpg");
+  background-size: cover; }
+
+.weather-partlySunny-picture {
+  display: block;
+  z-index: 1;
+  width: 100%;
+  background-image: url("images/sunny.jpeg");
+  background-size: cover; }
+
+.weather-app {
+  opacity: 0.9;
+  position: absolute;
+  z-index: 2;
+  background-color: #282c34;
+  height: 100%;
+  width: 50%;
+  right: 0px;
+  padding: 0 20px;
+  text-align: center; }
+
+input {
+  padding: 7px;
+  height: 25px;
+  width: 39%;
+  text-align: left;
+  background: #1F2124;
+  border: none;
+  border-bottom: lightblue 2px solid;
+  border-radius: 2px;
+  color: #03E1A4;
+  margin-left: 10px; }
+
+.weather-button {
+  background-color: #f8d23c;
+  font-size: 18px;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  color: black;
+  height: 40px;
+  margin: 20px auto; }
+
+.insertInfo {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  width: 95%; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+#result {
+  margin-top: 70px; }
+
+.response {
+  color: #03E1A4; }
+
+#notfound {
+  z-index: 0;
+  width: 100%; }
+
+.notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%; }
+
+.notfound-404 {
+  position: relative;
+  height: 200px;
+  margin: 0px auto 20px;
+  z-index: -1; }
+
+.notfound-404 > h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 236px;
+  font-weight: 200;
+  margin: 0px;
+  color: #211b19;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 50%; }
+
+.notfound-404 > h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #211b19;
+  background: #fff;
+  padding: 10px 5px;
+  margin: auto;
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0; }
